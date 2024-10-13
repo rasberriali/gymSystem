@@ -1,0 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/eurostile-lt-pro-unicode');
+
+/* Services.css */
+
+.services-section {
+    padding: 20px;
+    padding-top: 5%;
+    font-family: 'Eurostile LT Pro Unicode', sans-serif;
+  }
+  
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-details {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  .service-img-container {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    color: #f27f0c;
+    border-radius: 10%;
+  }
+  
+  .service-details:hover .overlay {
+    opacity: 1;
+  }
+  
+  .service-headline {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  

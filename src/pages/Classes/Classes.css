@@ -1,0 +1,177 @@
+.classes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 5%;
+  }
+  
+  .tab-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-left: 30px;
+  }
+  
+  .tab-buttons button {
+    margin-right: 10px;
+  }
+  
+  .class-title {
+    margin: 0 20px;
+    font-family: 'Eurostile LT Pro Unicode', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  
+  .tab-buttons button {
+    padding: 16px 42px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.25;
+    background: #e0e0e0;
+    text-decoration: none;
+    user-select: none;
+    color: black;
+    font-size: 16px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+    overflow: hidden;
+    margin: 10px 0;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .tab-buttons button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(255,255,255,0.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  
+  .tab-buttons button:focus,
+  .tab-buttons button:hover {
+    background: #ff6600;
+  }
+  
+  .tab-buttons button:active:after {
+    width: 300px;
+    height: 300px;
+  }
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .class-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-left: 50px;
+  }
+  
+  .class-card {
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 10px; 
+    overflow: hidden;
+    height: 150px;
+    width: calc(30% - 10px);
+  }
+  
+  .class-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .class-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .class-overlay h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .class-overlay p {
+    margin: 0;
+    font-size: 1em;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  .class-schedule {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 25%;
+    height: fit-content; 
+    margin-left: 0; 
+    align-self: flex-start; 
+  }
+  
+  .class-schedule h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .schedule-item:first-child {
+    border-top: none;
+  }
+  
+  .schedule-item .class-details {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+  
+  .schedule-item .class-name {
+    font-weight: bold;
+  }
+  
+  .schedule-item .coach-name {
+    font-size: 0.9em;
+  }
+  
+  .schedule-item .time,
+  .schedule-item .status {
+    flex: 3; 
+    text-align: right; 
+  }
+  

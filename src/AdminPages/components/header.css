@@ -1,0 +1,49 @@
+/* Header.css */
+@import url('https://fonts.cdnfonts.com/css/eurostile-lt-pro-unicode');
+
+.sidebarheader {
+  width: 200px;
+  background-color: #f7f7f7;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+#gym-logo {
+  width: 100px;
+  height: auto;
+}
+
+.menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-link i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.nav-link span {
+  font-weight: bold;
+}

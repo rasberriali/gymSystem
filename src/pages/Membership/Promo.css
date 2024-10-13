@@ -1,0 +1,31 @@
+.promo-container {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .promo-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .promo-container p {
+    margin-bottom: 10px;
+  }
+  
+  .avail-button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .avail-button:hover {
+    background-color: #777;
+  }
+  

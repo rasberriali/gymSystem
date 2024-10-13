@@ -1,0 +1,103 @@
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px; 
+  }
+  
+  .Services {
+    padding-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .add-btn {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  input,
+  textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-btn {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-photo-btn {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .service-list {
+    margin-top: 20px;
+  }
+  
+  .service {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .service-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Changed from center to flex-start */
+  }
+  
+  .service-photo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .service-text {
+    flex-grow: 1;
+    max-width: 80%; /* Set a maximum width to ensure wrapping */
+    word-wrap: break-word; /* Ensure long text wraps properly */
+    white-space: pre-wrap; /* Preserve line breaks and spaces */
+  }
+  
+  .service-text strong {
+    display: block;
+  }
+  
+  .service-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .service-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  

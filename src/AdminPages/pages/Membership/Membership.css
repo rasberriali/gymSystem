@@ -1,0 +1,174 @@
+.app {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 80%;
+    padding-left: 150px;
+  }
+  
+  .plans {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .plans h2 {
+    margin-top: 0;
+  }
+  
+  .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .plan.selected {
+    background-color: #ddd;
+  }
+  
+  .plan-name {
+    flex-grow: 1;
+  }
+  
+  .plan-buttons button {
+    margin-left: 5px;
+  }
+  
+  .add-plan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .add-plan input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .add-plan button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .inclusion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .inclusion input {
+    flex-grow: 1;
+    padding: 5px;
+  }
+  
+  .inclusion button {
+    margin-left: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .members-section {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .members-section {
+    margin-top: 20px;
+  }
+  
+  .member-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .member-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .member-info span {
+    width: 30%;
+  }
+  
+  .member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .member-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .member-info span {
+    width: 33%;
+    text-align: center;
+  }
+  
+  .member-actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+  }
+  
+  .add-member-form,
+  .edit-member-form,
+  .edit-plan-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .add-member-form input,
+  .edit-member-form input,
+  .edit-plan-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .add-member-form button,
+  .edit-member-form button,
+  .edit-plan-form button {
+    padding: 5px 10px;
+  }
+  
+  .add-member-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
