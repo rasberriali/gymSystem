@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+    
+  /*Coaches Thumbnail*/
+  .coaches-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 0;
+  }
+  
+  .coach-card {
+    width: 200px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .coach-picture {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .coach-info {
+    padding: 15px;
+  }
+  
+  .coach-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .coach-info p {
+    margin: 0;
+    color: #666;
+  }
+  
+  
+  /* Coach Profile*/
+  .coach-profile {
+    padding: 60px;
+  }
+    
+  .back-button {
+    padding-top: 30px;
+    display: inline-block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+    
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+    
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+    
+  .profile-image {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+    
+  .profile-info {
+    max-width: 600px;
+    margin-left: 20px;
+  }
+    
+  .profile-info h1 {
+    font-size: 24px;
+    margin: 10px 0 40px 0;
+  }
+    
+  .profile-info p {
+    font-size: 16px;
+    color: #333;
+  }
+    
+  .inquire-text {
+    margin-top: 20px;
+    color: #888;
+    font-style: italic;
+  }
+  

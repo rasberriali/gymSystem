@@ -1,0 +1,422 @@
+.dashboard {
+    font-family: Arial, sans-serif;
+   max-width: 100%;
+   margin: 0 auto;
+   padding: auto;
+   background-color: #ffffff;
+   min-height: 66rem; 
+ }
+ 
+ .user-info {
+   display: flex;
+   height: 170px;
+   align-items: center;
+   margin-bottom: 40px;
+   padding: 75px 140px 40px 140px;
+   background-color: rgba(211, 211, 211, 0.8);
+ }
+ 
+ .avatar-placeholder {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background-color: #e0e0e0;
+   margin-right: 20px;
+   border-style: solid;
+   border-color: rgba(0, 0, 0, 0.6);
+ }
+ 
+ .user-details {
+   flex-grow: 1;
+ }
+ 
+ .user-details h2 {
+   margin: 0;
+   font-size: 24px;
+ }
+ 
+ .user-details p {
+   margin: 5px 0;
+   color: #666;
+ }
+ 
+ .edit-form {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+ }
+ 
+ .edit-form label {
+   margin-bottom: 5px;
+   color: #333;
+ }
+ 
+ .edit-form input {
+   display: block;
+   width: calc(100% - 20px);
+   padding: 8px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+ }
+ 
+ .user-actions {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .user-actions button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+   margin: 8px 10px;
+   padding: 8px 15px;
+   background-color: #4a4a4a;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   text-align: center;
+ }
+ 
+ .user-stats {
+     display: flex;
+     overflow-x: auto;
+     justify-content: space-between;
+     background-color: white;
+     padding: 20px 75px;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(16, 5, 5, 0.1);
+     margin: -80px 100px 0px 100px;
+     position: relative;
+     z-index: 1;
+ }
+ 
+ .stat-item {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .stat-item .fa-regular {
+     font-size: 35px;
+     margin-right: 10px;
+ }
+ 
+ .stat-content {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .stat-item .value {
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ .stat-item .label {
+     color: #666;
+ }
+ 
+ .tabs {
+     margin: 50px 100px;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(16, 5, 5, 0.1);
+     padding: 20px;
+     background-color: #ffffff; 
+ }
+ 
+ .tabs:last-child {
+     margin-bottom: 0;
+   }
+ 
+ .tab-button {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 50px;
+ 
+ }
+ 
+ .tab-button button {
+   padding: 10px 20px;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   font-size: 16px;
+   margin: 0 10px;
+   font-weight: bold;
+ }
+ 
+ .active-plan {
+   background-color: white;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .bookings-section {
+   padding-bottom: 70px;
+ }
+ 
+ .plan-details {
+   width: 27%;
+   text-align: center;
+ }
+ 
+ .plan-details-right{
+   width: 57%;
+   padding-right: 40px;
+   font-style: italic;
+ }
+ 
+ .plan-name {
+   padding-bottom: 40px;
+ }
+ 
+ .plan-name h1 {
+   margin: 0;
+   font-size: 24px;
+   font-weight: bold;
+   text-align: center;
+   padding-bottom: 8px;
+ }
+ 
+ .plan-name p {
+   margin: 5px 0;
+   font-size: 16px;
+   color: #666;
+   text-align: center;
+ }
+ 
+ .plan-dates h2 {
+   margin: 0;
+   font-size: 20px;
+   padding-bottom: 8px;
+ }
+ 
+ .plan-dates p {
+   margin: 5px 0;
+   font-size: 14px;
+   color: #666;
+   text-align: center;
+ }
+ 
+ .plan-start, .plan-end {
+   padding-bottom: 40px;
+ }
+ 
+ .unsubscribe {
+     display: flex;
+     margin-top: 20px;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 55px;
+ }
+ 
+ .plan-button {
+     padding: 10px 20px;
+     background-color: #4a4a4a;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ 
+ .plan-info {
+   padding-bottom: 20px;
+ }
+ 
+ .plan-info p {
+     font-size: 14px;
+     color: #666;
+     text-align: left;
+ }
+ 
+ .plan-inclusion {
+     margin-top: 20px;
+ }
+ 
+ .plan-inclusion p {
+     font-size: 14px;
+     color: #333;
+   font-weight: lighter;
+ }
+ 
+ .inclusions {
+     list-style-type: disc;
+     padding-left: 20px;
+ }
+ 
+ .inclusions li {
+     font-size: 14px;
+     color: #666;
+ }
+ 
+ .unsubscribe button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 140px;
+   padding: 8px 15px;
+   background-color: #4a4a4a;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   text-align: center;
+ }
+ 
+ .table-container {
+   margin-top: 20px;
+ }
+ 
+ .table-container table {
+   width: 70%;
+   border: none;
+ }
+ 
+ .table-container th, .table-container td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+   border: none;
+ }
+ 
+ .table-container th {
+   background-color: #f2f2f2;
+   font-weight: bold;
+ }
+ 
+ .table-container p {
+   margin-left: 10%;
+   font-weight: normal;
+   font-size: medium;
+ }
+ 
+ .sub-buttons-container {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .vertical-line-one {
+   height: 24rem;
+   width: 1px;
+   background-color: black;
+ }
+ 
+ .vertical-line {
+   height: 16rem;
+   width: 1px;
+   background-color: black;
+   margin: 0 20px;
+ }
+ 
+ .sub-buttons {
+   text-decoration: none;
+   margin-right: 10px;
+ }
+ 
+ .bookings-table {
+   width: 100%;
+   border-collapse: separate;
+   border-spacing: 0 10px;
+   margin-top: -280px;
+   margin-left: 270px;
+ }
+ 
+ .bookings-table th,
+ .bookings-table td {
+   text-align: center;
+   padding: 15px 10px;
+   background-color: #f5f5f5;
+   border: none;
+ }
+ 
+ .bookings-table th {
+   background-color: transparent;
+ }
+ 
+ .bookings-table td:first-child {
+   border-radius: 10px 0 0 10px;
+ }
+ 
+ .bookings-table td:last-child {
+   border-radius: 0 10px 10px 0;
+ } 
+ 
+ .action-buttons {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 70px;
+ }
+ 
+ .action-buttons table,
+ tr,
+ td {
+   border: none;
+ }
+ 
+ .action-buttons button {
+   padding: 10px 20px;
+   margin-right: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .icon-container {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 10px;
+   margin-right: 20px;
+   background-color: #f5f5f5;
+ }
+ 
+ .icon-container i {
+   font-size: 20px;
+   color: #4a4a4a;
+   margin-right: 8px;
+ }
+ 
+ .icon-container button {
+   background-color: transparent;
+   border: none;
+   font-size: 16px;
+   cursor: pointer;
+   color: #4a4a4a;
+ }
+ 
+ .coaches-button.active, .services-button.active {
+   color: #4a4a4a; 
+   font-weight: bold;
+ }
+ 
+ .services-list h3 {
+   margin-top: 0;
+ }
+ 
+ .services-list table {
+   width: 100%;
+   border-collapse: collapse;
+ }
+ 
+ .services-list th,
+ .services-list td {
+   text-align: left;
+   padding: 10px;
+   border-bottom: 1px solid #e0e0e0;
+   border: none;
+ }
+ 
+ .services-list td {
+   background-color: #f5f5f5f5;
+   border-radius: 10px;
+ }
+ 
+ .services-list th {
+   font-weight: normal;
+ }
+ 

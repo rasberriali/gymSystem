@@ -1,0 +1,66 @@
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* the gap between the boxes */
+    padding: 20px;
+    padding-top: 80px; 
+  }
+  
+  .facility-box {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .facility-box:hover {
+    transform: scale(1.07);
+  }
+  
+  .facility-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .facility-box:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .overlay-description {
+    font-size: 0.9em;
+    font-style: italic;
+  }
+  

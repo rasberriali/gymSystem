@@ -1,0 +1,109 @@
+@import url('https://fonts.cdnfonts.com/css/eurostile-lt-pro-unicode');
+
+/*Rehab Services Page CSS*/
+
+.services-page-1 {
+  font-family: 'Eurostile LT Pro Unicode', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.go-back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  z-index: 2; /* Ensure the button is above the image */
+}
+
+.go-back-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content {
+  max-width: 1200px;
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px; 
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #181515;
+  text-align: justify;
+}
+
+.services-subcategories {
+  margin-top: 40px;
+}
+
+.subcategory {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.subcategory h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subcategory p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.subcategory-image {
+  width: 500px; 
+  height: auto; 
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.subcategory-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+/*Sports Massage CSS*/
+.services-page-2 {
+  font-family: 'Eurostile LT Pro Unicode', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.facility-image-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.facility-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.introduction p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}

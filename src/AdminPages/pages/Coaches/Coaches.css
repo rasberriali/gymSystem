@@ -1,0 +1,494 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    padding-left: 25vh;
+    overflow: hidden;
+  }
+  
+  .coach-list-container {
+    width: 15%;
+    background-color: #ffffff;
+    padding: 0 0 0 17px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 100%;
+  }
+  
+  .coach-detail {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    max-width: 150vh;
+    margin: 0 auto 20px;
+  }
+  
+  .coach-detail-container {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto; 
+    height: 100vh; 
+    background-color: #f0f0f0; 
+    box-sizing: border-box; 
+  }
+  
+  .coach-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+  }
+  
+  .coach-list-item.selected {
+    background-color: #f0f0f0; 
+  }
+  
+  .coach-list-item:hover {
+    background-color: #666;
+  }
+  
+  .coach-list-item img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .coach-list-item span {
+    flex-grow: 1;
+  }
+  
+  .coach-detail-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .coach-detail-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin-right: 20px;
+  }
+  
+  .edit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    display: block;
+    margin: 20px 0 20px 18px;
+    padding: 3px 55px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Coaches Component Styles */
+  .app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .Coaches {
+    padding-top: 100px;
+    margin-left: 290px;
+    margin-right: 20px;
+  }
+  
+  .add-btn {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-btn {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-photo-btn {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .coach-list {
+    padding: 20px 0; 
+  }
+  
+  .coach {
+    background-color: #ffffff;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .coach-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .coach-photo-container {
+    flex: 0 0 150px;
+    margin-right: 20px;
+  }
+  
+  .coach-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .coach-photo img, .default-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .default-photo {
+    background-color: #ddd;
+  }
+  
+  .coach-title {
+    flex-grow: 1;
+  }
+  
+  .coach-title h2 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .coach-title p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+  
+  .coach-info {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .coach-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .coach-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px; 
+  }
+  
+  .personal-info {
+    flex: 1; 
+    margin-right: 20px;
+  }
+  
+  
+  .coach-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .coach-email {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .coach-bio {
+    margin: 0 40px 20px 50px;
+  }
+  
+  .coach-bio p {
+    text-indent: 50px;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  
+  .coach-additional-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .personal-info{
+    flex: 1;
+    margin-left: 15%;
+  }
+  
+  .personal-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .personal-info i {
+    margin-right: 10px;
+  }
+  
+  .expertise-container {
+    flex-basis: 100px; 
+    background-color: #e0e0e0;
+    padding: 0 20px 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20%;
+  }
+  
+  .expertise-container h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .expertise-list {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .expertise-list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .expertise ul {
+    padding-left: 20px;
+  }
+  
+  .expertise li {
+    margin-bottom: 5px;
+  }
+  
+  .coach-expertise ul li {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .coach-text {
+    flex-grow: 1;
+  }
+  
+  .coach-text strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .coach-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .coach-actions button {
+    padding: 7px 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #333;
+    border-radius: 30px;
+  }
+  
+  .expertise, .schedule-section {
+    margin-top: 20px;
+  }
+  
+  /*.schedule-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }*/
+  
+  .schedule-section h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Calendar */
+  .calendar-top {
+    padding-top: 80px;
+  }
+  
+  .calendar {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    padding: 0 10px;
+  }
+  
+  .month-year-container {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .month-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    left: 20rem;
+    gap: 11em;
+  }
+  
+  .navigation-buttons button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; 
+    color: #333; 
+    padding: 0;
+  }
+  
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar th, .calendar td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .calendar th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .date-cell {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .date-number {
+    font-size: 14px;
+  }
+  
+  .date-content {
+    flex-grow: 1;
+  }
+  
+  /*.calendar td:hover {
+    background-color: #e0e0e0;
+  }*/
+  
+  /* For form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+  }
