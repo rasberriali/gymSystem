@@ -59,18 +59,23 @@ def login_view(request):
 @api_view(['POST'])
 @parser_classes([MultiPartParser, FormParser])
 def register_user(request):
+    required_fields = ['username', 'password', 'email', 'full_name', 'birthdate', 'gender', 'phonenumber']
+    
+    for field in required_fields:
+        if not request.data.get(field):
+            return Response({'error': f'{field} is required'}, status=status.HTTP_400_BAD_REQUEST)
+
     username = request.data.get('username')
     password = request.data.get('password')
     email = request.data.get('email')
-    full_name = request.data.get('fullName')
+    full_name = request.data.get('full_name')
     birthdate = request.data.get('birthdate')
     gender = request.data.get('gender')
     phonenumber = request.data.get('phonenumber')
     profilepicture = request.FILES.get('profilepicture')
-    account_type = request.data.get('account_type', 'member')
 
     if GymMember.objects.filter(username=username).exists():
-        return Response({'error': 'Username Already Exists'}, status = status.HTTP_400_BAD_REQUEST)
+        return Response({'error': 'Username already exists'}, status=status.HTTP_400_BAD_REQUEST)
     if GymMember.objects.filter(email=email).exists():
         return Response({'error': 'Email already in use'}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -79,15 +84,15 @@ def register_user(request):
         username=username,
         password=hashed_password,
         email=email,
-        full_name = request.data.get('full_name'), 
+        full_name=full_name,
         birthdate=birthdate,
         gender=gender,
         phonenumber=phonenumber,
         profilepicture=profilepicture,
-        account_type=account_type,
     )
 
     return Response({'message': 'User registered successfully'}, status=status.HTTP_201_CREATED)
+
 
 
 

@@ -6,7 +6,7 @@ import './Registration.css';
 const Registration = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    fullName: '',
+    full_name: '',
     username: '',
     birthdate: { mm: '', dd: '', yyyy: '' },
     gender: '',
@@ -56,26 +56,26 @@ const Registration = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    const { fullName, username, email, password, phoneNumber, birthdate } = formData;
-    if (!fullName || !username || !email || !password || !phoneNumber || !birthdate.mm || !birthdate.dd || !birthdate.yyyy || !formData.gender) {
+  
+    const { full_name, username, email, password, phoneNumber, birthdate } = formData;
+    if (!full_name || !username || !email || !password || !phoneNumber || !birthdate.mm || !birthdate.dd || !birthdate.yyyy || !formData.gender) {
       setMessage('Please fill out all fields.');
       return;
     }
-
+  
     const data = new FormData();
     data.append('username', username);
     data.append('password', password);
     data.append('email', email);
-    data.append('full_name', fullName);
+    data.append('full_name', full_name);
     data.append('birthdate', `${birthdate.yyyy}-${birthdate.mm}-${birthdate.dd}`);
     data.append('gender', formData.gender);
     data.append('phonenumber', phoneNumber);
-
+  
     if (formData.profilePicture) {
-      data.append('profile_picture', formData.profilePicture);
+      data.append('profilepicture', formData.profilePicture);
     }
-
+  
     try {
       const response = await axios.post('http://localhost:8000/api/register/', data, {
         headers: {
@@ -84,7 +84,7 @@ const Registration = () => {
       });
       setMessage(response.data.message);
       setFormData({
-        fullName: '',
+        full_name: '',
         username: '',
         birthdate: { mm: '', dd: '', yyyy: '' },
         gender: '',
@@ -93,8 +93,8 @@ const Registration = () => {
         phoneNumber: '',
         profilePicture: null,
       });
-
-      navigate('/'); 
+  
+      navigate('/');
     } catch (error) {
       if (error.response) {
         setMessage(error.response.data.error || 'Registration failed');
@@ -114,7 +114,7 @@ const Registration = () => {
         </div>
         <div className="form-fields">
           <input type="file" accept="image/*" onChange={handleProfilePictureChange} />
-          <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleInputChange} />
+          <input type="text" name="full_name" placeholder="Full Name" value={formData.fullName} onChange={handleInputChange} />
           <input type="text" name="username" placeholder="Username" value={formData.username} onChange={handleInputChange} />
           <div className="birthdate">
             <input type="text" name="birthdate.mm" placeholder="MM" value={formData.birthdate.mm} onChange={handleInputChange} />
